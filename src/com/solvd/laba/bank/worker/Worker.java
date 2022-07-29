@@ -1,14 +1,18 @@
 package com.solvd.laba.bank.worker;
 
-public abstract class Worker {
-    private int ID;
-    private String fullName;
+import com.solvd.laba.bank.Person;
+
+public abstract class Worker extends Person {
     private int salary;
     private int workHours;
 
     boolean safeAccess;
     boolean compAccess;
     boolean cashregAccess;
+
+    public Worker(int ID, String fullName) {
+        super(ID, fullName);
+    }
 
     public boolean isSafeAccess() {
         return safeAccess;
@@ -50,19 +54,4 @@ public abstract class Worker {
         this.workHours = workHours;
     }
 
-    public int getID() {
-        return ID;
-    }
-
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
 }
