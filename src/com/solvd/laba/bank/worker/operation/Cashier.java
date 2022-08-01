@@ -5,8 +5,8 @@ import com.solvd.laba.bank.worker.Worker;
 public class Cashier extends Worker {
     boolean alarmButton = true;
 
-    public Cashier(int ID, String fullName) {
-        super(ID, fullName);
+    public Cashier(int ID, String fullName, int salary, int workHours) {
+        super(ID, fullName, salary, workHours);
     }
 
     @Override
@@ -15,7 +15,7 @@ public class Cashier extends Worker {
     }
 
     @Override
-    public boolean isCashregAccess() {
-        return true;
+    public void setCashregAccess(boolean cashregAccess) {
+        super.setCashregAccess(true);
     }
 }
