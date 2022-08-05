@@ -1,27 +1,43 @@
 package com.solvd.laba.bank.accounts;
 
+import com.solvd.laba.bank.Enums.AccountType;
+
 public class PersonalAccount {
-    private int accountNumber;
-    private int accountState;
+    private int clientID;
+    private AccountType accountType;
+    private double accountState;
+    private int pin;
 
-    public PersonalAccount(int accountNumber, int accountState) {
-        this.accountNumber = accountNumber;
+
+
+    public PersonalAccount(int clientID, AccountType accountType, double accountState, int pin) {
+        this.clientID = clientID;
+        this.accountType = accountType;
         this.accountState = accountState;
+        this.pin = pin;
     }
 
-    public int getAccountNumber() {
-        return accountNumber;
+    public int getClientID() {
+        return clientID;
     }
 
-    public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber;
+    public AccountType getAccountType() {
+        return accountType;
     }
 
-    public int getAccountState() {
+    public void setAccountType(AccountType accountType) {
+        this.accountType = accountType;
+    }
+
+    public double getAccountState() {
         return accountState;
     }
 
-    public void setAccountState(int accountState) {
+    public void setAccountState(double accountState) {
         this.accountState = accountState;
+    }
+
+    public int getPin() {
+        return pin;
     }
 }

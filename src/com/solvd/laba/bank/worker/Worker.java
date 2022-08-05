@@ -4,15 +4,21 @@ import com.solvd.laba.bank.Person;
 
 public abstract class Worker extends Person {
     private int salary;
-    private int workHours;
     boolean safeAccess;
     boolean compAccess;
     boolean cashregAccess;
 
-    public Worker(int ID, String fullName, int salary, int workHours) {
+    public Worker(int ID, String fullName) {
+        super(ID, fullName);
+    }
+
+    public Worker(int ID, String fullName, int salary) {
         super(ID, fullName);
         this.salary = salary;
-        this.workHours = workHours;
+    }
+
+    public Worker() {
+        super();
     }
 
     public boolean isSafeAccess() {
@@ -46,13 +52,5 @@ public abstract class Worker extends Person {
 
     public void setSalary(int salary) {
         this.salary = salary;
-    }
-
-    public int getWorkHours() {
-        return workHours;
-    }
-
-    public void setWorkHours(int workHours) {
-        this.workHours = workHours;
     }
 }

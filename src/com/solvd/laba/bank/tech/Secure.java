@@ -7,7 +7,4 @@ public abstract class Secure extends Device {
         return password;
     }
 
-    public void setPassword(int password) {
-        this.password = password;
-    }
 }

@@ -4,6 +4,9 @@ public abstract class Person {
     private int ID;
     private String fullName;
 
+    public Person() {
+    }
+
     public Person(int ID, String fullName) {
         this.ID = ID;
         this.fullName = fullName;

@@ -5,8 +5,9 @@ import com.solvd.laba.bank.worker.Worker;
 public class Security extends Worker {
     private boolean alarmButton = true;
 
-    public Security(int ID, String fullName) {
-        super(ID, fullName);
+    public Security(int ID, String fullName, int salary, boolean alarmButton) {
+        super(ID, fullName, salary);
+        this.alarmButton = alarmButton;
     }
 
     public boolean isAlarmButton() {

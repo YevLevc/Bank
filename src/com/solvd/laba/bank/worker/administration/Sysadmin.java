@@ -3,12 +3,12 @@ package com.solvd.laba.bank.worker.administration;
 import com.solvd.laba.bank.worker.Worker;
 
 public class Sysadmin extends Worker {
-    public Sysadmin(int ID, String fullName) {
-        super(ID, fullName);
+    public Sysadmin(int ID, String fullName, int salary) {
+        super(ID, fullName, salary);
     }
 
     @Override
-    public boolean isCompAccess() {
-        return true;
+    public void setCompAccess(boolean compAccess) {
+        super.setCompAccess(true);
     }
 }

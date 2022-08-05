@@ -4,9 +4,8 @@ import com.solvd.laba.bank.worker.Worker;
 
 public class Manager extends Worker {
 
-
-    public Manager(int ID, String fullName, int salary, int workHours) {
-        super(ID, fullName, salary, workHours);
+    public Manager(int ID, String fullName, int salary) {
+        super(ID, fullName, salary);
     }
 
     @Override

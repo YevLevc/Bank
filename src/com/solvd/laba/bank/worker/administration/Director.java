@@ -5,8 +5,8 @@ import com.solvd.laba.bank.worker.Worker;
 public class Director extends Worker {
     private boolean alarmButton = true;
 
-    public Director(int ID, String fullName, int salary, int workHours) {
-        super(ID, fullName, salary, workHours);
+    public Director(int ID, String fullName, int salary) {
+        super(ID, fullName, salary);
     }
 
 
