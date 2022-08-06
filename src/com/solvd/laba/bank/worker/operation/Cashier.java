@@ -10,7 +10,7 @@ public class Cashier extends Worker {
     boolean alarmButton = true;
 
     public Cashier() {
-        super();
+
     }
 
     public Cashier(int ID, String fullName, int salary) {

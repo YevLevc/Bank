@@ -8,10 +8,6 @@ public abstract class Worker extends Person {
     boolean compAccess;
     boolean cashregAccess;
 
-    public Worker(int ID, String fullName) {
-        super(ID, fullName);
-    }
-
     public Worker(int ID, String fullName, int salary) {
         super(ID, fullName);
         this.salary = salary;

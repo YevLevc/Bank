@@ -6,15 +6,15 @@ public class PersonalAccount {
     private int clientID;
     private AccountType accountType;
     private double accountState;
-    private int pin;
+    private int pinCode;
 
 
 
-    public PersonalAccount(int clientID, AccountType accountType, double accountState, int pin) {
+    public PersonalAccount(int clientID, AccountType accountType, double accountState, int pinCode) {
         this.clientID = clientID;
         this.accountType = accountType;
         this.accountState = accountState;
-        this.pin = pin;
+        this.pinCode = pinCode;
     }
 
     public int getClientID() {
@@ -37,7 +37,7 @@ public class PersonalAccount {
         this.accountState = accountState;
     }
 
-    public int getPin() {
-        return pin;
+    public int getPinCode() {
+        return pinCode;
     }
 }
