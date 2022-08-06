@@ -1,6 +1,6 @@
 package com.solvd.laba.bank.accounts;
 
-import com.solvd.laba.bank.Enums.AccountType;
+import com.solvd.laba.bank.enums.AccountType;
 
 public class PersonalAccount {
     private int clientID;
