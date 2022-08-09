@@ -5,7 +5,6 @@ import com.solvd.laba.bank.Person;
 public abstract class Worker extends Person {
     private int salary;
     boolean safeAccess;
-    boolean compAccess;
     boolean cashregAccess;
 
     public Worker(int ID, String fullName, int salary) {
@@ -14,15 +13,10 @@ public abstract class Worker extends Person {
     }
 
     public Worker() {
-        super();
     }
 
     public boolean isSafeAccess() {
         return safeAccess;
-    }
-
-    public boolean isCompAccess() {
-        return compAccess;
     }
 
     public boolean isCashregAccess() {
@@ -31,10 +25,6 @@ public abstract class Worker extends Person {
 
     public void setSafeAccess(boolean safeAccess) {
         this.safeAccess = safeAccess;
-    }
-
-    public void setCompAccess(boolean compAccess) {
-        this.compAccess = compAccess;
     }
 
     public void setCashregAccess(boolean cashregAccess) {

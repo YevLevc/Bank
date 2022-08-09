@@ -1,14 +1,12 @@
-package com.solvd.laba.bank.accounts;
+package com.solvd.laba.bank;
 
-import com.solvd.laba.bank.enums.AccountType;
+import com.solvd.laba.bank.enums.*;
 
 public class PersonalAccount {
     private int clientID;
     private AccountType accountType;
     private double accountState;
     private int pinCode;
-
-
 
     public PersonalAccount(int clientID, AccountType accountType, double accountState, int pinCode) {
         this.clientID = clientID;

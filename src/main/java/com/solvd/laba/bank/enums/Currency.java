@@ -1,4 +1,4 @@
-package com.solvd.laba.bank.Enums;
+package com.solvd.laba.bank.enums;
 
 public enum Currency {
     UAH(1), USD(0.028), EUR(0.025), PLN(0.15);

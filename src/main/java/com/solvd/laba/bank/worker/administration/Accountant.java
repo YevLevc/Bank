@@ -14,8 +14,4 @@ public class Accountant extends Worker {
         super.setSafeAccess(true);
     }
 
-    @Override
-    public void setCompAccess(boolean compAccess) {
-        super.setCompAccess(true);
-    }
 }
